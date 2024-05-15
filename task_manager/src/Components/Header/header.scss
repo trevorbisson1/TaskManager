@@ -1,0 +1,14 @@
+
+$Background-Color : rgb(110, 110, 110);
+
+.Header-Wrapper{
+    width: max-content;
+    background-color: $Background-Color;
+    
+    
+    .Title{
+        color: black;
+        display:flex;
+        flex-direction: column;
+    }
+}
