@@ -1,11 +1,11 @@
+import AddCalendarEvent from "../AddEvent/addEvent";
 import "./landing.scss"
-import calendarEvent from "../CalenderEvent/calendarEvent"
+
 const Landing = () => {
     return (
         <div className="Landing">
             hello
-            <calendarEvent/>
-            
+            <AddCalendarEvent/>
         </div>
     )
 }

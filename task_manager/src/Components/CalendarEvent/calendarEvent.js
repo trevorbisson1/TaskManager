@@ -1,7 +1,7 @@
 
 import "./calendarEvent.scss"
 
-const calendarEvent = () => {
+const CalendarEvent = () => {
     return (
         <div>
             poopo
@@ -9,4 +9,4 @@ const calendarEvent = () => {
     )
 }
 
-export default calendarEvent;
+export default CalendarEvent;
