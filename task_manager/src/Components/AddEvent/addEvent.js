@@ -6,7 +6,7 @@ const addEvent = () => {
             <form>
                 <h3>Event Name: </h3>
                 <input></input>
-                <h3></h3>
+                <input typeof="radio"></input>
             </form>
         </div>
     )

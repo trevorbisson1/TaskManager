@@ -4,11 +4,38 @@ $Background-Color : rgb(110, 110, 110);
 .Header-Wrapper{
     width: max-content;
     background-color: $Background-Color;
-    
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-between;
+    padding: 1%;
     
     .Title{
         color: black;
         display:flex;
         flex-direction: column;
+        padding-left: 2%;
+        h1{
+            padding: 0%;
+            margin: 0%
+        }
+        h5{
+            padding: 0%;
+            margin: 0%
+        }
+    }
+
+    .LoginSection{
+        display: flex;
+        flex-direction: row;
+        align-self: flex-end;
+        padding-right: 2%;
+        padding-bottom: 1%;
+
+        a{
+            text-decoration: none;
+            color: black;
+            font-weight: 400;
+        }
     }
 }
