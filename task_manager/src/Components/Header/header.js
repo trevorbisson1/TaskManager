@@ -7,6 +7,10 @@ const Header = () => {
                 <h1>Event Tracker!</h1>
                 <h5>By: Trevor Bisson</h5>
             </div>
+
+            <div className="LoginSection">
+                <a href="/"> Login / Register</a>
+            </div>
         </div>
     )
 }
