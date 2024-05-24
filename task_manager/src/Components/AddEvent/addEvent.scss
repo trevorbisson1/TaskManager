@@ -1,8 +1,10 @@
 $AddEventMarginTB : 7.5px;
 $AddEventMarginR: 5px;
+$TextBoxFocusColor: rgba(173, 216, 230, 0.568);
 .Add-Event{
     border: 1px;
     border-style: solid;
+    width: 50%;
 }
 
 .section{
@@ -12,10 +14,26 @@ $AddEventMarginR: 5px;
     margin:0px;
     input{
         height: fit-content;
+        border: none;
+        border-bottom: 2px solid black;
+    }
+    :focus{
+        background-color: $TextBoxFocusColor;
+        border: none;
+        border-bottom: 2px solid black;
     }
     h5{
         margin-top:$AddEventMarginTB;
         margin-bottom: $AddEventMarginTB;
         margin-right: $AddEventMarginR;
     }
+    #picker{
+        height: 100px;
+    }
+}
+.description{
+    padding: 16px 32px;
+    text-decoration: none;
+    margin: 4px 2px;
+    font-size: smaller;
 }
