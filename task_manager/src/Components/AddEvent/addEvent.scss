@@ -1,10 +1,21 @@
+$AddEventMarginTB : 7.5px;
+$AddEventMarginR: 5px;
 .Add-Event{
     border: 1px;
     border-style: solid;
-    box-shadow: 1px 1px 1px 1px;
 }
 
 .section{
     display: flex;
-    
+    flex-direction: row;
+    align-items: center;
+    margin:0px;
+    input{
+        height: fit-content;
+    }
+    h5{
+        margin-top:$AddEventMarginTB;
+        margin-bottom: $AddEventMarginTB;
+        margin-right: $AddEventMarginR;
+    }
 }

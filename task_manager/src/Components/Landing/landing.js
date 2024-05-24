@@ -1,4 +1,3 @@
-import AddCalendarEvent from "../AddEvent/addEvent";
 import "./landing.scss"
 import AddEvent from "../AddEvent/addEvent"
 const Landing = () => {
