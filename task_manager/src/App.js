@@ -1,4 +1,3 @@
-import logo from './logo.svg';
 import './App.css';
 import Header from './Components/Header/header';
 import { Routes, Route } from 'react-router-dom';
@@ -9,7 +8,7 @@ function App() {
     <div className="App">
         <Header></Header>
         <Routes>
-            <Route path="/" Component={Landing}></Route>
+            <Route index Component={Landing}></Route>
         </Routes>
     </div>
   );

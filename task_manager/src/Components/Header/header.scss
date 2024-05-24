@@ -2,13 +2,20 @@
 $Background-Color : rgb(110, 110, 110);
 
 .Header-Wrapper{
-    width: max-content;
+    display: flex;
+    width: 100%;
     background-color: $Background-Color;
-    
+    justify-content: flex-start;
     
     .Title{
         color: black;
         display:flex;
         flex-direction: column;
+        h1{
+            margin:.25em;
+        }
+        h5{
+            margin: 0.5em;
+        }
     }
 }
