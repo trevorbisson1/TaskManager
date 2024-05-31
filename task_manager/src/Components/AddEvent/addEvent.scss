@@ -1,39 +1,64 @@
 $AddEventMarginTB : 7.5px;
 $AddEventMarginR: 5px;
 $TextBoxFocusColor: rgba(173, 216, 230, 0.568);
-.Add-Event{
-    border: 1px;
-    border-style: solid;
-    width: 50%;
+.add-event-wrapper{
+    display: flex;
+    flex-direction: row;
+    width: 75%;
 }
 
-.section{
+.Add-Event
+{
+    border: 1px;
+    border-style: solid;
+    width: 75%;
+    padding-left: 5px;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+
+    .section{
     display: flex;
     flex-direction: row;
     align-items: center;
     margin:0px;
-    input{
-        height: fit-content;
-        border: none;
-        border-bottom: 2px solid black;
+
+        input{
+            height: fit-content;
+            border: none;
+            border-bottom: 2px solid black;
+        }
+        :focus{
+            background-color: $TextBoxFocusColor;
+            border: none;
+            border-bottom: 2px solid black;
+        }
+        h5{
+            margin-top:$AddEventMarginTB;
+            margin-bottom: $AddEventMarginTB;
+            margin-right: $AddEventMarginR;
+        }
+        #picker{
+            height: 100px;
+        }
     }
-    :focus{
-        background-color: $TextBoxFocusColor;
-        border: none;
-        border-bottom: 2px solid black;
+
+    .description-group{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        width: 50%;
+        
+            h5,#colorAnswer{
+                align-self: flex-start;
+                margin: 0;
+            }
+            .description{
+                padding: 16px 32px;
+                text-decoration: none;
+                margin: 4px 2px;
+                font-size: smaller;
+                padding: 5px;
+            }
     }
-    h5{
-        margin-top:$AddEventMarginTB;
-        margin-bottom: $AddEventMarginTB;
-        margin-right: $AddEventMarginR;
-    }
-    #picker{
-        height: 100px;
-    }
-}
-.description{
-    padding: 16px 32px;
-    text-decoration: none;
-    margin: 4px 2px;
-    font-size: smaller;
 }
