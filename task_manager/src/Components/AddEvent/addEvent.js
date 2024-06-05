@@ -4,10 +4,10 @@ import EventPreview from "../EventPreview/eventPreview"
 
 const AddEvent = () => {
 
-    const [timeLength,changeTimeLength] = useState(0);
+    const [timeLength,changeTimeLength] = useState(15);
     const [eventName,changeEventName] = useState("Example Name");
     const [eventStartTime,changeEventStartTime] = useState("00:00PM");
-    const [eventDescription, changeEventDescription] = useState("");
+    const [eventDescription, changeEventDescription] = useState("Event description");
     const [rgb,changeRGB] = useState("#27C8D3")
 
     const h4style = { color: rgb }
@@ -25,7 +25,7 @@ const AddEvent = () => {
                 </div>
                 <div className="section">
                     <h5>Proposed Time Length:</h5>
-                    <input type="range" min="0" max="240" step="5" value={timeLength} onChange={(e)=>changeTimeLength(e.target.value)}/>
+                    <input type="range" min="15" max="240" step="5" value={timeLength} onChange={(e)=>changeTimeLength(e.target.value)}/>
                     <h5>{timeLength} minutes</h5>
                 </div>
                 <div className="description-group">
@@ -39,7 +39,7 @@ const AddEvent = () => {
                 <button >Add Event</button>
         </div>
             <div>
-            <EventPreview name={eventName} start={eventStartTime} description={eventDescription} color={rgb}></EventPreview>
+            <EventPreview name={eventName} start={eventStartTime} description={eventDescription} color={rgb} timingLength={160+timeLength*.5+"px"}></EventPreview>
             </div>
         </div>
     )
